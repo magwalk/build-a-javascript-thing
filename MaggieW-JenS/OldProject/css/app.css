@@ -1,0 +1,374 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  font-family: 'Aller', sans-serif;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*Main Wrapper*/
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1.618rem; }
+
+/* ==========================================================================
+Typography
+========================================================================== */
+/*=Fonts=*/
+/*Aller*/
+@font-face {
+  font-family: 'Aller';
+  src: url("../scss/fonts/Aller/Aller_Rg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Aller';
+  src: url("../scss/fonts/Aller/Aller_Bd.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+/*artifika*/
+@font-face {
+  font-family: 'artifika';
+  src: url("../scss/fonts/artifika/Artifika-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+h1 {
+  font-family: 'artifika', serif;
+  font-size: 2.618rem; }
+
+/* ==========================================================================
+Colors
+========================================================================== */
+a {
+  color: #999900;
+  text-decoration: none;
+  target-name: new;
+  target-new: tab; }
+
+h1 {
+  color: #B80000; }
+
+p {
+  color: #66CC00;
+  line-height: 2.618rem; }
+
+/*==========================================================================
+Grid System
+==========================================================================*/
+/* Mobile Grid Resets all Columns to 100%*/
+.grid_1 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_1 {
+      width: 6.5%; } }
+
+.grid_2 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_2 {
+      width: 15%; } }
+
+.grid_3 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_3 {
+      width: 23.5%; } }
+
+.grid_4 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_4 {
+      width: 32%; } }
+
+.grid_5 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_5 {
+      width: 40.5%; } }
+
+.grid_6 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_6 {
+      width: 49%; } }
+
+.grid_7 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_7 {
+      width: 57.5%; } }
+
+.grid_8 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_8 {
+      width: 66%; } }
+
+.grid_9 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_9 {
+      width: 74.5%; } }
+
+.grid_10 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_10 {
+      width: 83%; } }
+
+.grid_11 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_11 {
+      width: 91.5%; } }
+
+.grid_12 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width: 800px) {
+    .grid_12 {
+      width: 100%; } }
+
+.alpha {
+  margin-left: 0px; }
+
+.omega {
+  margin-right: 0px; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+html .clearfix, *:first-child + html .clearfix {
+  zoom: 1; }
+
+.form-input, .m-contact-form--name, .m-contact-form--email, .m-contact-form--comment {
+  width: 100%;
+  height: 2.618rem;
+  color: #B80000;
+  margin-bottom: 0.381rem;
+  padding: 0.618rem;
+  font-size: 1rem;
+  border: solid 2px #e6e6e6;
+  transition: border 0.3s; }
+  .form-input:focus, .m-contact-form--name:focus, .m-contact-form--email:focus, .m-contact-form--comment:focus {
+    outline: 0;
+    border: solid 2px #B80000; }
+
+.form-textarea, .m-contact-form--comment {
+  display: block;
+  margin: 0 auto;
+  height: 200px; }
+
+.form-btn, .m-contact-form--btn {
+  display: block;
+  font-family: "Aller";
+  font-size: 1rem;
+  color: #FFF;
+  font-weight: normal;
+  -moz-border-radius: 0.618rem;
+  -webkit-border-radius: 0.618rem;
+  border-radius: 0.618rem;
+  border: 0px;
+  margin-top: 0.381rem;
+  min-width: 100px;
+  height: 2.618rem;
+  background-color: #B80000;
+  transition: background-color 0.3s; }
+  .form-btn:hover, .m-contact-form--btn:hover, .form-btn:active, .m-contact-form--btn:active {
+    background-color: #850000; }
+
+.m-contact-form--btn {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%; }
+
+.m-contact-form {
+  width: 100%; }
+
+.m-socialmedia {
+  width: 2.618rem;
+  border-radius: 0.618rem; }
+
+.m-name {
+  color: #B80000; }
+
+.m-socialmedia-heading {
+  font-size: 1.618rem; }
+
+.m-footer {
+  font-size: 1rem;
+  padding: 0.5em 1em 1.5em 1em;
+  -moz-border-radius: 0.618rem;
+  -webkit-border-radius: 0.618rem;
+  border-radius: 0.618rem;
+  background-color: #B80000;
+  background-image: url(../img/seattle.jpg);
+  background-blend-mode: multiply;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-end; }
+
+.m-footer-image {
+  padding-top: 0.618rem;
+  width: 4.236rem; }
+
+.m-footer-location {
+  font-family: 'Aller', sans-serif;
+  color: #FFF;
+  display: inline-block;
+  padding-left: 0;
+  text-align: left; }
+
+/* HEADER STYLES*/
+.page-heading {
+  font-size: 1.618rem;
+  text-transform: uppercase; }
+  @media screen and (min-width: 800px) {
+    .page-heading {
+      text-align: left; } }
+
+.m-nav {
+  text-transform: uppercase; }
+
+nav ul {
+  display: inline;
+  color: #999900; }
+  nav ul li {
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    nav ul li:hover {
+      background: #B80000;
+      color: #FFF; }
+      nav ul li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible; }
+    nav ul li a {
+      color: #FFF; }
+    nav ul li ul {
+      padding: 0;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 150px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transiton: opacity 0.2s;
+      -moz-transition: opacity 0.2s;
+      -ms-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      -transition: opacity 0.2s; }
+      nav ul li ul li {
+        background: #B80000;
+        display: block;
+        color: #66CC00; }
+        nav ul li ul li:hover {
+          background: #eb0000; }
+
+/*# sourceMappingURL=app.css.map */

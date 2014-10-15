@@ -1,0 +1,25 @@
+/*MEDIA QUERIES FOR RESPONSIVE LAYOUT*/
+@media (min-width: 800px) {
+  //Defines # of columns
+  $cols : 12;
+  $colWidth: 6.5%;
+  $gutterWidth: 2%;
+
+  @for $i from 1 through $cols {
+    .grid_#{$i} {
+      $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+      // 6.5
+      width: $gridWidth;
+    }
+  }
+
+
+  .page-heading {
+    text-align: left;
+  }
+
+  .m-navigation-list--item {
+    padding:2em;
+  }
+
+}

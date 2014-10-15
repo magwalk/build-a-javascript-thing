@@ -1,0 +1,34 @@
+.form-input {
+  width: 100%;
+  height: $large;
+  color: $primary;
+  margin-bottom: $tiny;
+  padding: $smaller;
+  font-size: $small;
+  border: solid 2px lighten(grey, 40%);
+  transition: border 0.3s;
+  &:focus {
+    outline: 0;
+    border: solid 2px $primary;
+  }
+}
+.form-textarea {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+.form-btn {
+  display: block;
+  @include fontSet('Aller', $small, $lightOnDark);
+  font-weight: normal;
+  @include borderRadius($smaller);
+  border: 0px;
+  margin-top: $tiny;
+  min-width: 100px;
+  height: $large;
+  background-color: $primary;
+  transition: background-color 0.3s;
+  &:hover, &:active {
+    background-color: darken($primary, 10%);
+  }
+}

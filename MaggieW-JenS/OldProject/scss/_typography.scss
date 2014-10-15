@@ -1,0 +1,56 @@
+/* ==========================================================================
+Typography
+========================================================================== */
+
+/*=Fonts=*/
+
+/*Aller*/
+
+@font-face {
+  font-family: 'Aller';
+  src: url('../scss/fonts/Aller/Aller_Rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aller';
+  src: url('../scss/fonts/Aller/Aller_Bd.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*artifika*/
+
+@font-face {
+  font-family: 'artifika';
+  src: url('../scss/fonts/artifika/Artifika-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'artifika', serif;
+  font-size: $large;
+}
+
+
+/* ==========================================================================
+Colors
+========================================================================== */
+
+a {
+  color: $secondary;
+  text-decoration: none;
+  target-name:new;
+  target-new:tab;
+}
+
+h1 {
+  color: $primary;
+}
+
+p {
+  color: $accent1;
+  line-height: $large;
+}

@@ -1,0 +1,24 @@
+
+.m-contact-form--name, .m-contact-form--email, .m-contact-form--comment {
+  @extend .form-input;
+}
+
+
+.m-contact-form--btn {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  @extend .form-btn
+
+}
+
+.m-contact-form--comment {
+  @extend .form-textarea;
+
+}
+
+.m-contact-form {
+  width: 100%;
+}
+
+

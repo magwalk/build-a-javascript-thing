@@ -1,0 +1,51 @@
+/*==========================================================================
+Grid System
+==========================================================================*/
+
+
+/* Mobile Grid Resets all Columns to 100%*/
+@for $i from 1 through $cols {
+  .grid_#{$i} {
+    width: 100%;
+    margin: 0 1% 1% 1%;
+    float: left;
+    display: block;
+    //Sets grid widths at larger screen sizes
+    @include breakpoint {
+      $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+      width: $gridWidth;
+    }
+  }
+}
+
+.alpha {
+  margin-left: 0px;
+}
+
+.omega {
+  margin-right: 0px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+  content :' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+html .clearfix, *:first-child+html .clearfix {
+  zoom:1
+}
