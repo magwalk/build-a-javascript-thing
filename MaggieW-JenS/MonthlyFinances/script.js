@@ -48,7 +48,6 @@ if (localStorage) {
     var newOutputTextNode = document.createTextNode(newOutputText);
     newOutputElement.appendChild(newOutputTextNode);
     outputVal.appendChild(newOutputElement);
-
   }
 }
 //If nothing has been stored in localStorage, set the array counter to 0
