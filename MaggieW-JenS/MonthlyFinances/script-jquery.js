@@ -50,7 +50,7 @@ $(document).ready(function(){
       $monthExcess = calculateExcess($foodVal, $rentVal, $incomeVal);
 
       var $newOutputText = $monthNameVal + " : " + $monthExcess;
-      $outputVal.append("<p>" + $newOutputText + "</p>");
+      $outputVal.append("<p class='newOutput'>" + $newOutputText + "</p>");
 
     });
   }
@@ -83,9 +83,15 @@ $(document).ready(function(){
 
     //Writes new object data to the DOM
     var $newOutputText = $monthNameVal + " : " + $monthExcess;
-    $outputVal.append("<p>" + $newOutputText + "</p>");
+    $outputVal.append("<p class='newOutput'>" + $newOutputText + "</p>");
 
     $i += 1;
+  });
+
+  $('.newOutput').click(function(){
+    var nth_child = $(this).parent().children().length - $(this).nextAll().length - 1;
+    alert($monthValues[nth_child].monthName + " Finances, Income was " + $monthValues[nth_child].income + ", Rent was " + $monthValues[nth_child].rent+ ", and Food cost was " + $monthValues[nth_child].food + ".");
+
   });
 
 });
